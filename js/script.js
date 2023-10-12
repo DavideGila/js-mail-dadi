@@ -21,15 +21,23 @@ const mail = [
 
 const verifyButton = document.getElementById('verify');
 
-verifyButton.addEventListener('click', function(){
+verifyButton.addEventListener('click', function () {
     const verifyMail = document.getElementById('email').value;
-    const found = false
-    console.log(verifyMail)
-    for(let i = 0; i < mail; i++){
+    let found = false;
+    console.log(verifyMail);
+    for (let i = 0; i < mail; i++) {
         let currentMail = mail[i];
-        if (currentMail === verifyMail){
+        if (currentMail === verifyMail) {
             found = true
-        } else {  
+        } else {
         }
-    } 
-})
+    }
+    let text;
+    if (found) {
+        text = 'Mail esistente';
+        console.log(text)
+    } else {
+        text = 'Mail non presente';
+        console.log(text)
+    }
+});
