@@ -18,3 +18,5 @@ const mail = [
     'carol@gmail.com',
     'goku@gmail.com'
 ];
+
+const verifyButton = document.getElementById('verify')
