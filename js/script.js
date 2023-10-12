@@ -70,6 +70,10 @@ function getRndInteger(min, max) {
 };
 
 throwButton.addEventListener('click', function(){
-    randomNumber = diceNumber[getRndInteger(0, (diceNumber.length - 1))];
-    console.log(randomNumber);
+    let randomNumber1 = diceNumber[getRndInteger(0, (diceNumber.length - 1))];
+    let randomNumber2 = diceNumber[getRndInteger(0, (diceNumber.length - 1))];
+    const firstDice = document.getElementById('userdice');
+    const secondDice = document.getElementById('computerdice');
+    firstDice.innerHTML = randomNumber1;
+    secondDice.innerHTML = randomNumber2;
 })
