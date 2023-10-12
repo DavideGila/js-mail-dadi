@@ -76,4 +76,15 @@ throwButton.addEventListener('click', function(){
     const secondDice = document.getElementById('computerdice');
     firstDice.innerHTML = randomNumber1;
     secondDice.innerHTML = randomNumber2;
+
+    if(randomNumber1 > randomNumber2){
+        let text = 'User win'
+        console.log(text)
+    } else if (randomNumber2 > randomNumber1) {
+        text = 'User lost'
+        console.log(text)
+    } else {
+        text = 'Draw'
+        console.log(text)
+    }
 })
