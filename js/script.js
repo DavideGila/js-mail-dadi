@@ -63,3 +63,13 @@ const diceNumber = [
     5,
     6
 ];
+
+const throwButton = document.getElementById('dado');
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+};
+
+throwButton.addEventListener('click', function(){
+    randomNumber = diceNumber[getRndInteger(0, (diceNumber.length - 1))];
+    console.log(randomNumber);
+})
