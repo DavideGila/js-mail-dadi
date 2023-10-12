@@ -24,4 +24,7 @@ const verifyButton = document.getElementById('verify');
 verifyButton.addEventListener('click', function(){
     const verifyMail = document.getElementById('email').value;
     console.log(verifyMail)
+    for(let i = 0; i < mail; i++){
+        let currentMail = mail[i];
+    }
 })
