@@ -77,14 +77,12 @@ throwButton.addEventListener('click', function(){
     firstDice.innerHTML = randomNumber1;
     secondDice.innerHTML = randomNumber2;
 
+    let text = document.getElementById('wl');
     if(randomNumber1 > randomNumber2){
-        let text = 'User win'
-        console.log(text)
+        text.innerText = 'User win';
     } else if (randomNumber2 > randomNumber1) {
-        text = 'User lost'
-        console.log(text)
+        text.innerText = 'User lost';
     } else {
-        text = 'Draw'
-        console.log(text)
+        text.innerText = 'Draw';
     }
 })
