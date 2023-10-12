@@ -19,4 +19,9 @@ const mail = [
     'goku@gmail.com'
 ];
 
-const verifyButton = document.getElementById('verify')
+const verifyButton = document.getElementById('verify');
+
+verifyButton.addEventListener('click', function(){
+    const verifyMail = document.getElementById('email').value;
+    console.log(verifyMail)
+})
