@@ -25,19 +25,22 @@ verifyButton.addEventListener('click', function () {
     const verifyMail = document.getElementById('email').value;
     let found = false;
     console.log(verifyMail);
-    for (let i = 0; i < mail; i++) {
+    for (let i = 0; i < mail.length; i++) {
         let currentMail = mail[i];
         if (currentMail === verifyMail) {
             found = true
         } else {
         }
     }
-    let text;
+    let text = document.getElementById('text');
+    
     if (found) {
-        text = 'Mail esistente';
+        text.innerText = 'Mail esistente';
+        text.classList.add('bg-success');
         console.log(text)
     } else {
-        text = 'Mail non presente';
+        text.innerText = 'Mail non presente';
+        text.classList.add('bg-danger');
         console.log(text)
     }
 });
