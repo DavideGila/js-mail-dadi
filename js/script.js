@@ -20,6 +20,14 @@ const mail = [
 ];
 
 const verifyButton = document.getElementById('verify');
+const resetButton = document.getElementById('reset')
+
+resetButton.addEventListener('click', function(){
+    const verifyMail = document.getElementById('email').value = '';
+    text.innerText = '';
+    text.classList.remove('bg-success');
+    text.classList.remove('bg-danger');
+})
 
 verifyButton.addEventListener('click', function () {
     const verifyMail = document.getElementById('email').value;
